@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sheiko Mail</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar kiri -->
+    <aside class="sidebar">
+      <div class="logo">
+        <div class="icon">S</div>
+        <div>
+          <h1>Sheiko Mail</h1>
+          <span>Temporary Inbox</span>
+        </div>
+      </div>
+
+      <div class="email-section">
+        <label>Alamat Email</label>
+        <input type="text" id="local-part" placeholder="melati823">
+        <label>Pilih Domain</label>
+        <select id="domain">
+          <option>sheikoshop.my.id</option>
+        </select>
+        <button id="getEmail">Ambil Email</button>
+      </div>
+
+      <div class="actions">
+        <button id="copy">Copy</button>
+        <button id="refresh">Refresh</button>
+        <button id="new">New</button>
+        <button id="delete">Delete</button>
+      </div>
+    </aside>
+
+    <!-- Inbox tengah -->
+    <section class="inbox">
+      <h2>Kotak Masuk</h2>
+      <div id="inbox-list">Belum ada pesan masuk</div>
+    </section>
+
+    <!-- Konten email kanan -->
+    <section class="email-content">
+      <div id="email-body">Pilih pesan untuk membaca email</div>
+      <div id="attachments"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
